@@ -21,7 +21,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import PersonIcon  from '@mui/icons-material/Person';
 import MedicalServicesIcon  from '@mui/icons-material/MedicalServices';
 import { NavLink } from 'react-router-dom';
-import TimerFunc from '../Container/Time';
+
 
 
 const drawerWidth = 240;
@@ -125,9 +125,9 @@ export default function DrawerLayout(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Hospital Care
+           Hospital-121
           </Typography>
-          <TimerFunc className="justify-content-end"/>
+          
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
