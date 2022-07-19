@@ -1,21 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-
-import { Route, Switch } from 'react-router-dom';
-import Medicine from './container/Medicine';
-import Patients from './container/Patients';
-import Layout from './components/Layout';
+import DrawerLayout from "./Components/DrawerLayout";
+import {Switch,Route} from "react-router-dom";
+import Medicine from './Container/Medicine/Medicine';
+import Patient from './Container/Patient/Patient';
 
 function App() {
   return (
-    <>
-      <Layout>
-        <Switch>
-          <Route path={'/medicine'} exact component={Medicine}/>
-          <Route path={'/patients'} exact component={Patients}/>
-        </Switch>
-      </Layout>
-    </>
+    <div className="App">
+      <DrawerLayout>
+          <Switch>
+             <Route path='/Medicine' exact component={Medicine} />
+             <Route path='/patient' exact component={Patient} />
+          </Switch>
+      </DrawerLayout>
+    </div>
   );
 }
 
